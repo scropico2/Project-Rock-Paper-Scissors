@@ -1,6 +1,5 @@
 console.log("Hello World");
 
-console.log(Math.floor(Math.random() * 3));
 function getComputerChoice() {
   const number = Math.floor(Math.random() * 3);
   if (number === 0) {
@@ -11,5 +10,10 @@ function getComputerChoice() {
     return "scissors";
   }
 }
-
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+  const choice = prompt("Rock, paper or scissors?");
+  return choice;
+}
+console.log(getHumanChoice());
